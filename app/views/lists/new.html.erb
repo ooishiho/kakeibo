@@ -1,0 +1,11 @@
+<h2>新規投稿</h2>
+<%= form_with model: List.new do |f| %>
+  <p>月</p>
+  <p>日</p>
+  
+  <p>内容</p>
+  <%= f.string_field :title %>
+
+  <p>金額</p>
+  <%= f.integer :amount %>
+<% end %>
