@@ -6,7 +6,7 @@ get 'top'
 get 'lists/new'
 post 'lists' => 'lists#create'
 get 'lists/index' => 'lists#index'
-get 'lists/show'
+get 'lists/:id' => 'lists#show', as: 'list'
 get 'lists/edit'
 
 
