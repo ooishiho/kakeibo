@@ -5,9 +5,11 @@
 <%= list.title %>
 <%= list.amount %>
 
+
 <span>
-<%= link_to '詳細へ', list_path(list.id) %>
+ <%= link_to '詳細へ', list_path(list.id) %>
 </span>
 
 <% end %>
 
+<p>  <%= link_to '新規投稿', lists_new_path %></p>
