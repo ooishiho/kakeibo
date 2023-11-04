@@ -1,6 +1,5 @@
 <h3>内容変更</h3>
-
-<%= form_with model: @list do |f| %>
+<%= form_with model: @list, url: update_list_path(@list.id), method: :patch do |f| %>
 <p>日付</p>
 <%= f.date_field :day %>
 <p>内容</p>
