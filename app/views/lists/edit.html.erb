@@ -1,0 +1,15 @@
+<h3>内容変更</h3>
+
+<%= form_with model: @list do |f| %>
+<p>日付</p>
+<%= f.date_field :day %>
+<p>内容</p>
+<%= f.text_field :title %>
+<p>金額</p>
+<%= f.number_field :amount %>
+
+<%= f.submit '変更' %>
+<% end %>
+
+
+<%= link_to '一覧へ戻る', lists_index_path %>
