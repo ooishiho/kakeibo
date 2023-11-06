@@ -1,9 +1,9 @@
 <h2>新規投稿</h2>
 <%= form_with model: @list do |f| %>
   <p>月</p>
-  <%= f.month_field :month %>
+  <%= f.number_field :month %>
   <p>日</p>
-  <%= f.date_field :day %>
+  <%= f.number_field :day %>
   <p>内容</p>
   <%= f.text_field :title %>
   <p>金額</p>
