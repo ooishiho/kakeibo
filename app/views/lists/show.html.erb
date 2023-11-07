@@ -4,4 +4,5 @@
 <p><%= @list.amount %></p>
 
 <%= link_to "変更する", edit_list_path(@list.id) %>|
-<%= link_to "削除する", list_path(@list.id), method: :delete,"data-confirm" => "削除しますか？" %>
+<%= link_to "削除する", list_path(@list.id), method: :delete,"data-confirm" => "削除しますか？" %> |
+<%= link_to "戻る", lists_path %>
