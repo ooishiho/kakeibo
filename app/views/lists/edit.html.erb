@@ -1,5 +1,7 @@
 <h3>内容変更</h3>
 <%= form_with model: @list do |f| %>
+<p>月</p>
+<%= f.number_field :month %>
 <p>日付</p>
 <%= f.number_field :day %>
 <p>内容</p>
