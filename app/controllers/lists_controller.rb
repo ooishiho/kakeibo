@@ -41,6 +41,6 @@ class ListsController < ApplicationController
 private
 
   def list_params
-    params.require(:list).permit(:monty, :day, :title, :amount)
+    params.require(:list).permit(:month, :day, :title, :amount)
   end
 end

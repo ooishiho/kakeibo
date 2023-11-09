@@ -1,10 +1,10 @@
 <h1>一覧</h1>
 <% @lists.each do |list| %>
 
-<%= list.month %>
-<%= list.day %>
-<%= list.title %>
-<%= list.amount %>
+<p><%= list.month %>月 <%= list.day %>日</p>
+
+<p><%= list.title %></p>
+<p><%= list.amount %>円</p>
 
 
 <span>
