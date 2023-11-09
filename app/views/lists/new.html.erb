@@ -1,4 +1,12 @@
 <h2>新規投稿</h2>
+<!--エラーメッセージ-->
+  <!--<ul>-->
+  <!--  </% @list.errors.full_messages.each do |message| %>-->
+  <!--    <li></%= message %></li>-->
+  <!--  </% end %>-->
+  <!--</ul>-->
+
+
 <%= form_with model: @list do |f| %>
   <p>月</p>
   <%= f.number_field :month %>
