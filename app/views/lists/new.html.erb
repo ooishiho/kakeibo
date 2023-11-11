@@ -1,10 +1,13 @@
 <h2>新規投稿</h2>
 <!--エラーメッセージ-->
-  <!--<ul>-->
-  <!--  </% @list.errors.full_messages.each do |message| %>-->
-  <!--    <li></%= message %></li>-->
-  <!--  </% end %>-->
-  <!--</ul>-->
+  <% if @list.errors.any? %>
+  <%= @list.errors.count %>件の記述ミスがあります。<br>修正し、再投稿してください。
+  <ul>
+    <% @list.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
 
 
 <%= form_with model: @list do |f| %>
