@@ -10,16 +10,26 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
-  <haeder>
-    
-  </haeder>
-  
+
+
+
   <body>
-    <%= yield %>
+    <haeder>
+      <div class="has-background-grey p-2">
+        <a class="has-text-white title is-5" href="../">kakeibo</a>
+      </div>
+    </haeder>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <div class="has-background-grey-lighter">
+        <p class=""></p>
+      </div>
+    </footer>
   </body>
-  
-  <footer>
-    
-  </footer>
+
+
 </html>
