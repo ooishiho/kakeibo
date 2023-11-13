@@ -3,8 +3,8 @@ ja:
     errors:
       models:
         list:
-          month: 月
-          day: 日
-          title: 項目
-          amount: 金額
-          can't_be_blank: が未入力です
+          month: "月"
+          day: "日"
+          title: "内容"
+          amount: "金額"
+          can't_be_blank: "が未入力です"
