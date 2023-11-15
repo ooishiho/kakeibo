@@ -9,17 +9,19 @@
   </ul>
 <% end %>
 
+<div class="content">
+    <%= form_with model: @list do |f| %>
+    <p>月</p>
+    <%= f.number_field :month %>
+    <p>日</p>
+    <%= f.number_field :day %>
+    <p>内容</p>
+    <%= f.text_field :title %>
+    <p>金額</p>
+    <%= f.number_field :amount %>
 
-<%= form_with model: @list do |f| %>
-  <p>月</p>
-  <%= f.number_field :month %>
-  <p>日</p>
-  <%= f.number_field :day %>
-  <p>内容</p>
-  <%= f.text_field :title %>
-  <p>金額</p>
-  <%= f.number_field :amount %>
+    <%= f.submit '投稿' %>
+    <% end %>
+  <%= link_to '戻る' , lists_path %>
+</div>
 
-  <%= f.submit '投稿' %>
-<% end %>
-<%= link_to '戻る' , lists_path %>

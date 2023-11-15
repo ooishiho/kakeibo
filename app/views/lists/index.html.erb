@@ -1,17 +1,21 @@
-<h1>一覧</h1>
-<% @lists.each do |list| %>
+<div class="contaner">
+    
+    <h1>一覧</h1>
+        <% @lists.each do |list| %>
+        
+        <p><%= list.month %>月 <%= list.day %>日</p>
+        
+        <p><%= list.title %></p>
+        <p><%= list.amount %>円</p>
 
-<p><%= list.month %>月 <%= list.day %>日</p>
 
-<p><%= list.title %></p>
-<p><%= list.amount %>円</p>
+    <span>
+     <%= link_to '詳細へ', list_path(list.id) %>
+    </span>
 
+        <% end %>
 
-<span>
- <%= link_to '詳細へ', list_path(list.id) %>
-</span>
+    <p><%= link_to '新規投稿', new_list_path %></p>|
+    <%= link_to '戻る', root_path %>
 
-<% end %>
-
-<p><%= link_to '新規投稿', new_list_path %></p>|
-<%= link_to '戻る', root_path %>
+</div>
