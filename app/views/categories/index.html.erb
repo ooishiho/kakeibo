@@ -4,3 +4,13 @@
 <br>また、カテゴリー名を修正したい場合も可能です。
 </p>
 
+ <%= form_with model: Category.new, url: categories_path,method: :post do |f| %>
+ <%= f.label :name, 'カテゴリー名' %>
+ <%= f.text_field :name, class: 'form-control', placeholder: 'カテゴリー名' %>
+ <%= f.submit '追加' %>
+ <% end %>
+
+ <% @categories.each do |category| %>
+ <%= category.name %>
+ <%= link_to '変更', edit_categories_path(category.id) %>
+ <% end %>
